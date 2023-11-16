@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Активна кнопка</title>
+    <style>
+      .active-button {
+        background-color: green;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="myButton" onclick="toggleButton()">Натисни мене</button>
+
+    <script>
+      function toggleButton() {
+        var button = document.getElementById('myButton');
+        button.classList.toggle('active-button');
+      }
+    </script>
+  </body>
+</html>
